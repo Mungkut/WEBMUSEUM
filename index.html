@@ -6,9 +6,23 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        body {
+           background-image: url(https://i.postimg.cc/h43WRzmv/86e02708278f443a5684f3453c091156.jpg);
+               background-size: cover;
+               background-position: center;
+               background-attachment: fixed;
+        }
+        button {
+             background-image: url(https://i.postimg.cc/MZVhL6wf/3e1a3c6c92de1c602fae4f7e8b4dc386.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
         header {
-            background-color: #9006ba;
-            color: #fff;
+            background-image: url(https://i.postimg.cc/Qx9L88gb/1e94cf8132325c2c721bda8cbd192a45.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             padding: 1rem 0;
             text-align: center;
             margin-bottom: 20px;
@@ -58,6 +72,10 @@
     }
     
         .flex-container {
+            background-image: url(https://i.postimg.cc/Qx9L88gb/1e94cf8132325c2c721bda8cbd192a45.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             display: flex;
             gap: 10px;
             justify-content: space-around;
@@ -66,17 +84,66 @@
         }
         .decorated:hover {
             background-color: #db96e9;
+
         }
 
         .decorated-box {
             flex: 1;
             padding: 15px;
+            background-image: url(https://i.postimg.cc/Qx9L88gb/1e94cf8132325c2c721bda8cbd192a45.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
             border: 1px solid #6c757d;
             background-color: #f8f9fa;
             text-align: center;
             border-radius: 5px;
             font-size: 32px;
         }
+
+.decorated-box-map {
+    width: 400px; 
+    margin: 20px auto; 
+    padding: 15px; 
+    background-image: url(https://i.postimg.cc/Qx9L88gb/1e94cf8132325c2c721bda8cbd192a45.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border: 2px solid #ccc; 
+    background-color: #f8f9fa;
+    border-radius: 15px; 
+    text-align: center; 
+    width: 350px; 
+}
+
+
+.decorated-box-map h3 {
+    margin: 0 0 10px 0; 
+    font-size: 20px;
+    color: #333;
+}
+
+
+.image-container-wrap {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px; 
+}
+
+
+.decorated-box-map .map-image {
+    max-width: 48%; 
+    height: auto;
+    border-radius: 8px;
+}
+.map-container-wrap {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px;
+    flex-wrap: wrap; 
+    margin: 20px auto; 
+}
     </style>
 </head>
 <body>
@@ -84,11 +151,28 @@
         <h1>Magic Museum</h1>
         <h2>พิพิธภัณฑ์ศิลปะของศิลปินทั้ง 3 </h2>
     </header>
-    <div id="main-container">
-        <div class="flex-container">
-            <div class="decorated-box decorated">Map</div>
+ <div class="map-container-wrap">
+    <div class="decorated-box-map">
+        <h3>Map</h3>
+        <div class="image-container-wrap">
+            <img class="map-image" src="https://i.postimg.cc/Hxts3XtY/202-20250731160747.png">
+            <img class="map-image" src="https://i.postimg.cc/g2fJ0YJW/fotor-ai-20250731153232.jpg">
+            <img class="map-image" src="https://i.postimg.cc/VNnNr3rb/fotor-ai-20250731153234.jpg">
+            <img class="map-image" src="https://i.postimg.cc/C10xjmkr/fotor-creation-2025-07-31.jpg">
+        </div>
     </div>
+    <div class="decorated-box-map">
+        <h3>Cafe</h3>
+        <div class="image-container-wrap">
+            <img class="map-image" src="https://i.postimg.cc/1t9L15TB/image0-large.png">
+            <img class="map-image" src="https://i.postimg.cc/XvKTPy2X/a6d6sd5.png">
+            <img class="map-image" src="https://i.postimg.cc/0Qchk11s/image1-large.png">
+             <img class="map-image" src="https://i.postimg.cc/TPvzQcJZ/sds2.png">
+        </div>
+    </div>
+</div>
 <!--จบโค้ดแมป-->
+<button class="animated-button">
     <button onclick="showImages()">
         <div class="flex-container">
             <div class="decorated-box decorated">
@@ -108,6 +192,7 @@
             </div>
         </div>
     </button>
+</button>
 <!--จบของตัวเอง-->
     <button onclick="showImagesKan()">
         <div class="flex-container">
@@ -154,6 +239,10 @@
     imageContainer.style.display = (imageContainer.style.display === 'block') ? 'none' : 'block';
   }
   function showImagesE() {
+    const imageContainer = document.getElementById('image-container-E');
+    imageContainer.style.display = (imageContainer.style.display === 'block') ? 'none' : 'block';
+  }
+    function showImagesMAp() {
     const imageContainer = document.getElementById('image-container-E');
     imageContainer.style.display = (imageContainer.style.display === 'block') ? 'none' : 'block';
   }
