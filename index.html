@@ -13,15 +13,27 @@
                background-attachment: fixed;
         }
         button {
-             background-image: url(https://i.postimg.cc/MZVhL6wf/3e1a3c6c92de1c602fae4f7e8b4dc386.jpg);
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
             justify-content: center; 
+            border: none;
+            padding: 0;
+            background: none;
 
         }
         header {
             background-image: url(https://i.postimg.cc/Qx9L88gb/1e94cf8132325c2c721bda8cbd192a45.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 1rem 0;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header-2 {
+            background-image: url(https://i.postimg.cc/h43WRzmv/86e02708278f443a5684f3453c091156.jpg);
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -36,6 +48,10 @@
         h2 {
             text-align: center;
             font-size: 24px;
+        }
+        h4 {
+            font-size: 64px;
+            color: #f8f9fa;
         }
         .profile {
             width: 350px;
@@ -76,7 +92,6 @@
         .flex-container {
             background-image: url(https://i.postimg.cc/Qx9L88gb/1e94cf8132325c2c721bda8cbd192a45.jpg);
             background-size: cover;
-            background-position: center;
             background-attachment: fixed;
             display: flex;
             gap: 10px;
@@ -84,6 +99,7 @@
             margin-top: 20px;
             font-size: 16px;
             justify-content: center; 
+            max-width: 350px; 
         }
         .decorated:hover {
             background-color: #db96e9;
@@ -95,7 +111,6 @@
             padding: 15px;
             background-image: url(https://i.postimg.cc/Qx9L88gb/1e94cf8132325c2c721bda8cbd192a45.jpg);
             background-size: cover;
-            background-position: center;
             background-attachment: fixed;
             border: 1px solid #6c757d;
             background-color: #f8f9fa;
@@ -106,7 +121,7 @@
         }
 
 .decorated-box-map {
-    width: 400px; 
+    width: 950px; 
     margin: 20px auto; 
     padding: 15px; 
     background-image: url(https://i.postimg.cc/Qx9L88gb/1e94cf8132325c2c721bda8cbd192a45.jpg);
@@ -117,14 +132,13 @@
     background-color: #f8f9fa;
     border-radius: 15px; 
     text-align: center; 
-    width: 350px; 
     justify-content: center; 
 }
 
 
 .decorated-box-map h3 {
     margin: 0 0 10px 0; 
-    font-size: 20px;
+    font-size: 30px;
     color: #333;
 }
 
@@ -149,6 +163,21 @@
     flex-wrap: wrap; 
     margin: 20px auto; 
 }
+.for-read {
+    font-size: 14px;
+}
+.for-read-art {
+    font-size: 18px;
+}
+.artist-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: flex-start;
+ }
+
     </style>
 </head>
 <body>
@@ -158,7 +187,19 @@
     </header>
  <div class="map-container-wrap">
     <div class="decorated-box-map">
-        <h3>Map</h3>
+        <h3>Map
+            <br><span class="for-read"> is a floor plan of the "Museum Magic" layout. 
+                At the very center is a circular exhibition hall with seating in the middle and glass windows at four points around the perimeter.
+                 Surrounding this central space are three main artist exhibition rooms: “P’nutt” at the top, “Kana_ZaZa” to the left, and “Mungkut” to the right.
+                  Green garden areas are located between these rooms, offering outdoor relaxation spaces.
+                   At the bottom, the layout features a café on the left and an information center on the right, 
+                   both connected to the main hall. The main entrance and exit are located at the bottom center, 
+                   with a red-marked pathway leading into the museum. Fire exits are marked in green squares, 
+                   and the glass windows are indicated by blue arcs.
+                </span>   
+            <br> And here our example map and view 
+     </h3>
+
         <div class="image-container-wrap">
             <img class="map-image" src="https://i.postimg.cc/Hxts3XtY/202-20250731160747.png">
             <img class="map-image" src="https://i.postimg.cc/g2fJ0YJW/fotor-ai-20250731153232.jpg">
@@ -167,7 +208,13 @@
         </div>
     </div>
     <div class="decorated-box-map">
-        <h3>Cafe</h3>
+        <h3>Cafe
+            <br><span class="for-read"> Your journey through art deserves a beautiful pause. 
+                After immersing yourself in the gallery's masterpieces, find your way to our tranquil café. 
+                Here, you can reflect on the inspiration you've gathered while savoring a coffee that's been crafted with just as much passion. 
+                Let the aroma of fresh brew and the quiet ambiance complete your artistic experience.
+                </span>
+        </h3>
         <div class="image-container-wrap">
             <img class="map-image" src="https://i.postimg.cc/1t9L15TB/image0-large.png">
             <img class="map-image" src="https://i.postimg.cc/XvKTPy2X/a6d6sd5.png">
@@ -185,15 +232,22 @@
         The museum currently hosts a rare exhibition:
         “ The Echoes of Creation”, featuring works from three extraordinary artists.</h5>
 </div>
-
+<div class="header-2"> 
+        <h4> DOWN THERE IS OUR EXAMPLE ART
+    </h4>
+ <div class="artist-container">
     <button onclick="showImages()">
         <div class="flex-container">
             <div class="decorated-box decorated">
             <img class="profile" src="https://i.postimg.cc/hGzTSndX/774-20250515203426.png">
             <div class="decorated">Mungkut</div>
             <div class="flex-container">น.ส.ปัณณธร โสภาวรรณ</div>
+            <span class="for-read-art"> Lying on the grass brings a sense of comfort, calm, and vitality. I painted this simply for my own peace of mind
+             </span>
             <div id="image-container">
                 <img class="pic" src="https://i.postimg.cc/brXTXJVY/p8.jpg">
+                <span class="for-read-art"> Waves of the sea and their beauty are etched in my memory. This painting is a reflection of that contentment.
+             </span>
                 <img class="pic" src="https://i.postimg.cc/wxJ2XX31/p7.jpg">
                 <img class="pic" src="https://i.postimg.cc/KvD5VmPF/p6.jpg">
                 <img class="pic" src="https://i.postimg.cc/jdbXZDJZ/p5.jpg">
@@ -209,14 +263,18 @@
     <button onclick="showImagesKan()">
         <div class="flex-container">
         <div class="decorated-box decorated">
-            <img class="profile" src="https://i.postimg.cc/vH0VfT71/kan1.png">
+            <img class="profile" src="https://i.postimg.cc/6qwvLG1Z/kan5.png">
             <div class="decorated">Kana_ZaZa</div>
             <div class="flex-container">น.ส.มนัสนันท์ ภูมิพัฒนพงศ์</div>
+            <span class="for-read-art"> Life in a big city is always chaotic, but sometimes it's quiet and can make us feel like ourselves.
+             </span>
             <div id="image-container-kan">
-                <img class="pic" src="https://i.postimg.cc/fLQtD9sP/kan2.png">
-                <img class="pic" src="https://i.postimg.cc/ZqdBGLG3/kan3.png">
                 <img class="pic" src="https://i.postimg.cc/QCbW6xRy/kan4.png">
-                <img class="pic" src="https://i.postimg.cc/6qwvLG1Z/kan5.png">
+            <span class="for-read-art"> The image was inspired by focalors from genshin impact because I like her story. She is a goddess who has to bear the rules of celestia and she has to endure for 500 years, like being imprisoned in the deep sea.
+             </span>
+                <img class="pic" src="https://i.postimg.cc/ZqdBGLG3/kan3.png">
+                <img class="pic" src="https://i.postimg.cc/fLQtD9sP/kan2.png">
+                <img class="pic" src="https://i.postimg.cc/vH0VfT71/kan1.png">
                 <img class="pic" src="https://i.postimg.cc/cL68mWTF/kan6.png">
                 <img class="pic" src="https://i.postimg.cc/JnjXkQKm/kan7.png">
                 <img class="pic" src="https://i.postimg.cc/25svytQ2/kan8.png">
@@ -230,17 +288,26 @@
             <img class="profile" src="https://i.postimg.cc/ZKHrHVm5/1.jpg">
             <div class="decorated">Pnutt</div>
             <div class="flex-container">นายปรินทร อินทโชติ</div>
-            <div id="image-container-E">
-                <img class="pic" src="https://i.postimg.cc/rFM157vH/4.jpg">
+            <span class="for-read-art"> The Mountain of R is a picture I drew while playing 
+                    Roblox with my friends. was a picture I drew because I felt like drawing landscapes, as I don't usually draw landscapes, 
+                     and I'm satisfied with the result.</span>
+            <div id="image-container-E"> 
+                <img class="pic" src= "https://i.postimg.cc/HkLbhXW4/2.jpg">
+                <span class="for-read-art"> work, titled Listening to Death, 
+                    was created so that I could practice my watercolor skills, 
+                    modeled after Self-Portrait with Death as a Fiddler.
+                </span>
                 <img class="pic" src="https://i.postimg.cc/mkN70SFV/6.jpg">
                 <img class="pic" src="https://i.postimg.cc/kghW3GBr/3.jpg">
-                <img class="pic" src="https://i.postimg.cc/HkLbhXW4/2.jpg">
+                <img class="pic" src="https://i.postimg.cc/rFM157vH/4.jpg">
                 <img class="pic" src="https://i.postimg.cc/8khdJTnW/5.jpg">
             </div>
         </div>
     </div>
 </button>
 <!--จบของไอ่เอิ้ด-->
+</div>
+</div>
 <script>
   function showImages() {
     const imageContainer = document.getElementById('image-container');
